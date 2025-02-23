@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos HTML</title>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Hello World!</h1>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção com um parágrafo simples -->
+        <section>
+            <p>Esse é um parágrafo!</p>
+        </section>
+
+        <!-- Seção listando tecnologias para desenvolvimento web -->
+        <section>
+            <h2>Tecnologias relacionadas ao desenvolvimento WEB</h2>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </section>
+
+        <!-- Seção contendo um link para outra página -->
+        <section>
+            <a href="segunda-pagina.html">Clique aqui para ir para outra página.</a>
+        </section>
+
+        <!-- Seção com um formulário de contato -->
+        <section>
+            <article>
+                <h2>Formulário de Contato</h2>
+                <form id="meuFormulario">
+                    <div style="display: grid; width: 50%; gap: 12px;">
+                        <!-- Campo para inserir o nome -->
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+
+                        <!-- Campo para inserir o e-mail -->
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <!-- Campo para inserir a mensagem -->
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem aqui"></textarea>
+
+                        <!-- Botão para enviar o formulário -->
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2025 Todos os direitos reservados a Felipe Girardi Macedo.</p>
+    </footer>
+
+</body>
+
+</html>

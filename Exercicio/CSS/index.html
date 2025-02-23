@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos CSS</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Hello World!</h1>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <div class="content">
+            <section class="main-content">
+                <article>
+                    <h2>Formulário de Contato</h2>
+                    <form id="meuFormulario">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem aqui"></textarea>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </article>
+            </section>
+            <aside class="sidebar">
+                <h3>Informações Adicionais</h3>
+                <p>Aqui você pode adicionar mais detalhes ou uma seção lateral relevante.</p>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2025 Todos os direitos reservados a Felipe Girardi Macedo.</p>
+    </footer>
+
+    <!-- JavaScript para manipular o envio do formulário -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("meuFormulario").addEventListener("submit", function (event) {
+                event.preventDefault(); // Impede o envio padrão do formulário
+                alert("Formulário enviado!"); // Exibe um alerta ao usuário
+                this.reset(); // Limpa os campos do formulário após o envio
+            });
+        });
+    </script>
+</body>
+
+</html>

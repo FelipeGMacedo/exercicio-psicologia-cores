@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: blue;
+}
+
+.botao {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: darkred;
+}
+
+.contador {
+    font-size: 2em;
+    color: orange;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+.erro {
+    color: red;
+}
+
+.sucesso {
+    color: green;
+}
